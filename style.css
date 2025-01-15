@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', 'Inter', sans-serif;
+    color: #333;
+    background-color: white;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+nav {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-content {
+    padding: 22px;
+}
+
+.hero h2 {
+    font-size: 1.6em;
+    color: black;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    margin: 15px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 10px 20px;
+    background-color: #58B5A6;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.product-title {
+    text-align: center;
+}
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.product {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    max-width: 420px;
+    text-align: left;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content */
+    text-align: left;
+    min-height: 300px; 
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* ensure image maintains aspect ratio when filling the container */
+    margin: 0 auto; /* center the image horizontally */
+    display: block;
+}
+
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.product-price {
+    color: #006FFD;
+    font-weight: bold;
+}
+
+.product-description {
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: black;
+    text-align: left;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.product-rating {
+    font-size: 0.9em;
+    color: orange;
+}
+
+.buy-button {
+    color: #58B5A6;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.buy-button:hover {
+    background-color: #45a049;
+}
+
+.view-more {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-button {
+    display: inline-block;
+    margin-top: 16px;
+    background-color: #58B5A6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.view-button:hover {
+    background-color: #45a049;
+}
+
+@media screen and (min-width: 768px) {
+    .products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .product {
+        flex: 1 1 48%;
+        max-width: 48%;
+        text-align: center;
+        padding: 16px;
+    }
+    .product img {
+        height: 600px; /* Fixed height for product images */
+        object-fit: cover; /* Prevent image distortion */
+    }
+    .body {
+        margin: 0;
+        padding: 0;
+    }
+    .main-content {
+        padding: 10px;
+    }
+    .about-title {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .about-description {
+        font-size: 1.2em;
+        line-height: 1.6;
+        text-align: justify; /*ensure proper alignment*/
+    }
+    .about-footer {
+        font-size: 0.9em;
+        text-align: center; /*for better readability*/
+        padding-top: 10px;
+    }
+    .about-footer a {
+        display: inline-block; /* ensure links stack properly on smaller screens */
+        word-wrap: break-word; /* ensure long links don't overflow */
+    }
+}
+
+.about-title {
+    font-size: 1.8em;
+    color: #333;
+    text-align: left;
+    text-decoration: bold;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.about-description {
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #555;
+}
+
+.about-footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #333;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    padding-top: 16px;
+}
+
+.about-footer a {
+    color: #4CAf50;
+    text-decoration: none;
+}
+
+.about-footer a:hover {
+    text-decoration: underline;
+}
